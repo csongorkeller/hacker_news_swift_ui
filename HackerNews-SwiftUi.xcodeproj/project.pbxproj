@@ -13,6 +13,10 @@
 		CC745CEF2551747500816D7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC745CEE2551747500816D7B /* Assets.xcassets */; };
 		CC745CF22551747500816D7B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC745CF12551747500816D7B /* Preview Assets.xcassets */; };
 		CC745CF52551747500816D7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC745CF32551747500816D7B /* LaunchScreen.storyboard */; };
+		CC745CFF255179F000816D7B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC745CFE255179F000816D7B /* NetworkManager.swift */; };
+		CC745D0325517B5800816D7B /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC745D0225517B5800816D7B /* PostData.swift */; };
+		CC745D0725519CEC00816D7B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC745D0625519CEC00816D7B /* DetailView.swift */; };
+		CC745D0B2551A18900816D7B /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC745D0A2551A18900816D7B /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		CC745CF12551747500816D7B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC745CF42551747500816D7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC745CF62551747500816D7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC745CFE255179F000816D7B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CC745D0225517B5800816D7B /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		CC745D0625519CEC00816D7B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		CC745D0A2551A18900816D7B /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,10 @@
 		CC745CE72551747300816D7B /* HackerNews-SwiftUi */ = {
 			isa = PBXGroup;
 			children = (
+				CC745CFD255179D100816D7B /* Models */,
 				CC745CE82551747300816D7B /* AppDelegate.swift */,
 				CC745CEA2551747300816D7B /* SceneDelegate.swift */,
-				CC745CEC2551747300816D7B /* ContentView.swift */,
+				CC745D0525519CCA00816D7B /* Views */,
 				CC745CEE2551747500816D7B /* Assets.xcassets */,
 				CC745CF32551747500816D7B /* LaunchScreen.storyboard */,
 				CC745CF62551747500816D7B /* Info.plist */,
@@ -73,6 +82,25 @@
 				CC745CF12551747500816D7B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CC745CFD255179D100816D7B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC745CFE255179F000816D7B /* NetworkManager.swift */,
+				CC745D0225517B5800816D7B /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CC745D0525519CCA00816D7B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC745CEC2551747300816D7B /* ContentView.swift */,
+				CC745D0625519CEC00816D7B /* DetailView.swift */,
+				CC745D0A2551A18900816D7B /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC745D0325517B5800816D7B /* PostData.swift in Sources */,
+				CC745D0725519CEC00816D7B /* DetailView.swift in Sources */,
+				CC745CFF255179F000816D7B /* NetworkManager.swift in Sources */,
 				CC745CE92551747300816D7B /* AppDelegate.swift in Sources */,
 				CC745CEB2551747300816D7B /* SceneDelegate.swift in Sources */,
 				CC745CED2551747300816D7B /* ContentView.swift in Sources */,
+				CC745D0B2551A18900816D7B /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
